@@ -26,7 +26,7 @@ public class ProgramAreaPinningTest {
     //Test the getOpCode() method returns correct character
     @Test
     public void testGetOpCode() {
-    ProgramArea pa = new ProgramArea("123++@");
+    	ProgramArea pa = new ProgramArea("123++@");
 	assertEquals(pa.getOpCode(0,1), '2');
-	}
+    }
 }
