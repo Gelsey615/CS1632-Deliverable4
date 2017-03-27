@@ -18,8 +18,8 @@ public class ProgramExecutorPinningTest {
     	ProgramArea pa = new ProgramArea("123++@");
     	MainPanel mp = new MainPanel();
     	ProgramExecutor _e = new ProgramExecutor(mp, ps, pa);
-	    _e.modulo();
-	    assertEquals(0, _e._ps.peek());
+	_e.modulo();
+	assertEquals(0, _e._ps.peek());
     }
     
     //test that modulo() won't perform when a = 0
@@ -32,12 +32,12 @@ public class ProgramExecutorPinningTest {
     	ProgramArea pa = new ProgramArea("123++@");
     	MainPanel mp = new MainPanel();
     	ProgramExecutor _e = new ProgramExecutor(mp, ps, pa);
-	    try{
-	    	_e.modulo();
-	    }catch(ArithmeticException ae){
-	    	pass = true;
-	    } 
-	    assertTrue(pass);
+	try{
+	    _e.modulo();
+	}catch(ArithmeticException ae){
+	    pass = true;
+	} 
+	assertTrue(pass);
     }
     
   //test that normal modulo() case returns correct result
@@ -49,7 +49,7 @@ public class ProgramExecutorPinningTest {
     	ProgramArea pa = new ProgramArea("123++@");
     	MainPanel mp = new MainPanel();
     	ProgramExecutor _e = new ProgramExecutor(mp, ps, pa);
-	    _e.modulo();
-	    assertEquals(3, _e._ps.peek());
+	_e.modulo();
+	assertEquals(3, _e._ps.peek());
     }
 }
