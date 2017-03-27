@@ -96,7 +96,6 @@ public class ProgramArea {
      */
     
     public char getOpCode(int x, int y) {
-
 	if (x >= _xSize || x < 0 || y >= _ySize || y < 0) {
 	    return (char) 0;
 	}
