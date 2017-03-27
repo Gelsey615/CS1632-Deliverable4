@@ -37,7 +37,7 @@ import java.util.*;
 // &   Get integer from user and push it
 // ~   Get character from user and push it
 // @   End program
-// 0 – 9   Push corresponding number onto the stack
+// 0 鈥� 9   Push corresponding number onto the stack
 
 
 
@@ -253,7 +253,7 @@ public class ProgramExecutor {
 	    case '@':	
 		_programComplete = true;
 		break;
-		// 0 – 9   Push corresponding number onto the stack
+		// 0 鈥� 9   Push corresponding number onto the stack
 	    case '0':
 	    case '1':
 	    case '2':
@@ -369,14 +369,6 @@ public class ProgramExecutor {
      */
 
     public void modulo() {
-
-	int location = 19;
-
-	for (int j = 0; j < 120000; j++) {
-	    location += Math.acos(j) + Math.atan(j - 1) / Math.sqrt(j * 2);
-	}
-	
-
 	shouldUpdateStack();
 	int a = _ps.pop();
 	int b = _ps.pop();
