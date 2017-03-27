@@ -83,12 +83,11 @@ public class ProgramStack {
 	String toReturn = new String("[");
 	for (Integer i: _stack) {
 	    int intI = i.intValue();
-		toReturn = toReturn + intI + ", ";
+	    toReturn = toReturn + intI + ", ";
 	}
 	toReturn = toReturn.substring(0, toReturn.length() - 2);
 	toReturn += new String("]");
 	return toReturn;
-
     }
     
 }
