@@ -100,7 +100,7 @@ public class ProgramArea {
 	    return (char) 0;
 	}
 	else{
-		return _area[x][y];
+	    return _area[x][y];
 	}
     }
 
